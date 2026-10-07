@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đăng ký tài khoản</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="register-box">
+
+            <h1>Đăng ký</h1>
+            <p class="subtitle">Tạo tài khoản để bắt đầu mua sắm</p>
+
+            <form id="registerForm">
+
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Nhập họ và tên"
+                    >
+                    <small id="fullnameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                    >
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Nhập mật khẩu"
+                    >
+                    <small id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Xác nhận mật khẩu</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Nhập lại mật khẩu"
+                    >
+                    <small id="confirmPasswordError"></small>
+                </div>
+
+                <button type="submit" id="registerButton">
+                    Đăng ký
+                </button>
+
+            </form>
+
+            <p class="login-link">
+                Đã có tài khoản?
+                <a href="../dangnhap/index.html">Đăng nhập</a>
+            </p>
+
+            <p id="successMessage"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
