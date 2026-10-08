@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login-box">
+
+            <h1>Đăng nhập</h1>
+            <p class="subtitle">Chào mừng bạn quay trở lại</p>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Nhập email"
+                    >
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Nhập mật khẩu"
+                    >
+                    <small id="passwordError"></small>
+                </div>
+
+                <button type="submit" id="loginButton">
+                    Đăng nhập
+                </button>
+
+                <p id="loginError"></p>
+                <p id="successMessage"></p>
+
+            </form>
+
+            <p class="register-link">
+                Chưa có tài khoản?
+                <a href="../dangky/index.html">Đăng ký</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
